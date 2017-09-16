@@ -1,0 +1,24 @@
+//base color for main theme
+$base-color: #6fbd8d;
+
+//darkened version of main color for differentiation and user interaction
+$base-dark: darken($base-color, 5%);
+$base-darker: darken($base-color, 10%);
+$base-darkest: darken($base-color, 15%);
+
+//lightened version of main color for differentiation and user interaction
+$base-light: lighten($base-color, 5%);
+$base-lighter: lighten($base-color, 10%);
+$base-lightest: lighten($base-color, 15%);
+
+//gray background with corresponding font color
+$gray-bg: #F5F5F5;
+$gray-bg-header: #4A4A4A;
+$gray-bg-text: #626262;
+
+//white background font colors
+$white-bg-header: #525252;
+$white-bg-text: #646464;
+
+//a dark gray for block headers, social buttons and misc usage.
+$dark-gray: #747474;

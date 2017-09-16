@@ -1,0 +1,10 @@
+@import "vendors/bourbon/bourbon";
+@import "vendors/fakeloader/fakeLoader.scss";
+@import "helpers/_module.scss";
+@import "base/_module.scss";
+@import "components/_module.scss";
+
+.fade-position {
+  opacity: 0;
+}
+

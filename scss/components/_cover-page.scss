@@ -1,0 +1,38 @@
+.cover-page {
+  @include filter(saturate(60%));
+  background: no-repeat center center fixed;
+  @include prefixer(background-size, cover, webkit moz o spec);
+  height: 100vh;
+  padding-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  h2 {
+      font-family: $header-font;
+    }
+  #cover-scroll {
+    @include circle(80px);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    border: 3px solid white;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    a i {
+      color: white;
+    }
+  }
+}
+
+.cover-text {
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fixed {
+  position: fixed;
+}

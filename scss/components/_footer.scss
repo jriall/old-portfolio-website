@@ -1,0 +1,60 @@
+.footer {
+  background-color: $base-color;
+  .container {
+    text-align: center;
+    img {
+      width: 80px;
+      margin-top: 20px;
+    }
+    #footer-logo {
+      float: left;
+    }
+    .scrolltop {
+      @include circle(63px);
+      background: lighten($base-color, 30%);
+      margin-top: 20px;
+      float: right;
+      cursor: pointer;
+      @include transition(background 0.3s linear);
+      &:hover {
+        background: white;
+      }
+      a i {
+        color: $base-color;
+        cursor: pointer;
+      }
+    }
+    h4 {
+      font-size: 110%;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 20px;
+    }
+    ul {
+      display: inline-block;
+      overflow: auto;
+      margin-top: 20px;
+      margin-right: 35px;
+      li {
+        list-style-type: none;
+        float: left;
+        cursor: pointer;
+        a i {
+          background: lighten($base-color, 30%);
+          color: $base-color;
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          font-size: 25px;
+          text-align: center;
+          margin-right: 10px;
+          padding-top: 15%;
+          cursor: pointer;
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}

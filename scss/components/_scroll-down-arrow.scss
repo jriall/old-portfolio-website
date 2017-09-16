@@ -1,0 +1,18 @@
+.inbetween {
+  @include circle(80px);
+  background: $base-color;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  padding-top: 10px;
+  cursor: pointer;
+  &:hover {
+    background: $base-light;
+  }
+  a i {
+  color: white;
+  cursor: pointer;
+  }
+}

@@ -1,0 +1,41 @@
+//imported fonts
+@font-face {
+  font-family: 'GothamRoundedBold';
+  src: url('../fonts/gotham_rounded/GothamRoundedBold_21016.ttf');
+}
+
+@font-face {
+  font-family: 'GothamRoundedLight';
+  src: url('../fonts/gotham_rounded/GothamRoundedLight_21020.ttf');
+}
+
+@font-face {
+  font-family: 'GothamRoundedMedium';
+  src: url('../fonts/gotham_rounded/GothamRoundedMedium_21022.ttf');
+}
+
+@font-face {
+  font-family: 'GothamRoundedLightItalic';
+  src: url('../fonts/gotham_rounded/GothamRounded-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'GothamRoundedMediumItalic';
+  src: url('../fonts/gotham_rounded/GothamRounded-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: 'AdamCGPro';
+  src: url('../../fonts/ADAM.CG-PRO/ADAM.CG-PRO.otf');
+}
+
+//setting a backup stack
+$font-stack: Helvetica, Verdana, sans-serif;
+
+//setting font variables
+$main-font-bold: GothamRoundedBold, $font-stack;
+$main-font-light: GothamRoundedLight, $font-stack;
+$main-font-medium: GothamRoundedMedium, $font-stack;
+$main-font-light-italic: GothamRoundedLightItalic, $font-stack;
+$main-font-medium-italic: GothamRoundedMediumItalic, $font-stack;
+$header-font: AdamCGPro, $font-stack;

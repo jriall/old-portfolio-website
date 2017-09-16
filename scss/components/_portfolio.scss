@@ -1,0 +1,52 @@
+.portfolio {
+  text-align: center;
+  padding-bottom: 50px;
+  .image-container {
+    position: relative;
+    text-align: center;
+    &:hover .see-project {
+      display: block;
+    }
+    .image-responsive-new {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .see-project {
+      border: none;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      margin-right: -50%;
+      top: 50%;
+      left: 50%;
+      font-family: $main-font-medium;
+      background: $base-darkest;
+      color: white;
+      padding: 5px 15px 5px 15px;
+      font-size: 140%;
+      border-radius: 20px;
+      cursor: pointer;
+      @include transition(background 0.5s linear);
+      display: none;
+      &:hover {
+        background: white;
+        color: $base-color;
+        border: 3px solid $base-color;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  h3 {
+    color: $base-color;
+  }
+}
+
+.portfolio-project {
+  margin-top: 40px;
+}
+
+.project-hover {
+  @include filter(opacity(50%));
+}
