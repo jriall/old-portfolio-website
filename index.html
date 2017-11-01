@@ -333,7 +333,6 @@
                 <p>Player selects via a modal whether they wish to play as noughts or crosses and their answer results in either "X" or "0" being stored in a variable. Each of the HTML boxes is assigned a number from 1 to 9 (left to right, top to bottom). When a player clicks on on of the boxes, the program first checks against the remainingSquares array to see whether the square has not already been selected and if it hasn't, adds the value of that square to the playerSelection array and removes it from the remainingSquares array.</p>
                 <p>The computer's selection is made after a setTimeout interval of 700ms for a smoother gameplay experience. On a computer's turn we go throguh the same process as a player's turn, but rather than the selection being made by a player click, it is made by selecting a random number from the remainingSquares array.</p>
                 <p>After every player or computer turn we use the function checkVictory and victoryConditionsto test whether either computer or player have won the game by selecting three in a row. We also check for a tie. If either of these conditions are true then we display a tie, victory or loss modal to the player, ask them if they want to play again, and increment the relevant scoring tally.</p>
-
                 <a href="https://github.com/jriall/noughts-and-crosses" target="_blank" class="btn project-button">CODE</a>
                 <a href="https://jriall.github.io/noughts-and-crosses/" target="_blank" class="btn project-button">DEMO</a>
               </div>
@@ -420,8 +419,8 @@
                 <h3>The Project</h3>
                 <p>A recreation of a desktop calculator built with HTML, CSS, JavaScript and jQuery. Users can do simple addition, subtraction, multiplication and division, they can clear the display, chain commands, use a modulo operator and also a plus/minus button.</p>
                 <h3>The Logic</h3>
-               <p>The logic of the calculator uses two variables to keep track of the input values - display for the most recently inputted value and total which tracks the running total.</p>
-               <p>When we click on a number it adds the value of the number clicked on to the display as well as the display variable. Clicking on an arithmetic button appends that operator to display (or replaces the current operator if the last value of the display is another operator). We can chain as many valid commands as we want in this way. When we click equals to return the result of the displayed operations we use eval() to display the result and also store that result in the lastAnswer variable.</p>
+                <p>The logic of the calculator uses two variables to keep track of the input values - display for the most recently inputted value and total which tracks the running total.</p>
+                <p>When we click on a number it adds the value of the number clicked on to the display as well as the display variable. Clicking on an arithmetic button appends that operator to display (or replaces the current operator if the last value of the display is another operator). We can chain as many valid commands as we want in this way. When we click equals to return the result of the displayed operations we use eval() to display the result and also store that result in the lastAnswer variable.</p>
                 <a href="https://github.com/jriall/javascript-calculator" target="_blank" class="btn project-button">CODE</a>
                 <a href="https://jriall.github.io/javascript-calculator/" target="_blank" class="btn project-button">DEMO</a>
               </div>
@@ -534,18 +533,15 @@
   <!--footer-->
   <div class="footer">
     <div class="container">
-      <img src="images/JR-logo.png" alt="" id="footer-logo">
-      <div class="social-buttons-footer">
-        <ul>
-          <li><a href="https://github.com/JamesRiall" target="_blank"><i class="fa fa-github"></i> </a></li>
-          <li><a href="https://uk.linkedin.com/in/james-riall-bbb58059" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/JamesRiall" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-        <div class="scrolltop bouncey">
-          <a data-scroll href="#page-top"><i class="fa fa-4x fa-angle-up"></i></a>
+      <div class="row">
+        <div class="social-buttons-footer">
+          <ul>
+            <li><a href="https://github.com/JamesRiall" target="_blank"><i class="fa fa-github"></i> </a></li>
+            <li><a href="https://uk.linkedin.com/in/james-riall-bbb58059" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/JamesRiall" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
         </div>
       </div>
-      <h4> &copy; 2017 James Riall. Web Developer based in London</h4>
     </div>
   </div>
   <!--end of footer-->
