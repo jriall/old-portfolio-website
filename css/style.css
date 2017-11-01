@@ -476,14 +476,15 @@ hr {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   color: white;
-  outline: none; }
+  outline: none;
+  background-color: transparent; }
 
 .navbar-custom .nav li.active {
   color: white;
   outline: none; }
 
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: white; }
 
 .navbar-custom .nav li.active a:hover {
   color: white; }
