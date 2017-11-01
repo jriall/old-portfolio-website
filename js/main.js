@@ -55,7 +55,8 @@ $(document).ready(function() {
           '.navbar-custom .nav li a[href="#' +
             $(sectionPosition[i]).attr("id") +
             '"]'
-        ).css("border", "2px transparent");
+        )
+          .css("border", "none")
       }
     }
     //fade in content as we scroll down the page
