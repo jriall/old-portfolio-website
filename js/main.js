@@ -8,7 +8,7 @@ $("#fakeLoader").fakeLoader({
 
 $(document).ready(function() {
   //handling google form submission
-  let submitted = false;
+  var submitted = false;
   $("#gform").on("submit", function(e) {
     $("#gform *").fadeOut(2000);
     $("#gform").prepend("<p>Your submission has been processed...</p>");
@@ -29,13 +29,13 @@ $(document).ready(function() {
       $(".cover-text, #cover-scroll").removeClass("fixed");
     }
     //as the user scrolls down the page, the background color of the navbar fades in proportionately to how far down the cover page we are.
-    let percentage = $(document).scrollTop() / $(window).height() * 1.1;
-    let rgba = "rgba(111, 189, 141, " + percentage;
+    var percentage = $(document).scrollTop() / $(window).height() * 1.1;
+    var rgba = "rgba(111, 189, 141, " + percentage;
     $(".navbar-custom").css("background-color", rgba);
 
     //menu li items are highlighted when the user scrolls onto their respective sections by comparing scroll position to section position
-    let sectionPosition = $("body").find(".section-position");
-    for (let i = 0; i < sectionPosition.length; i++) {
+    var sectionPosition = $("body").find(".section-position");
+    for (var i = 0; i < sectionPosition.length; i++) {
       if (
         $(document).scrollTop() > $(sectionPosition[i]).offset().top - 500 &&
         $(document).scrollTop() <
@@ -61,8 +61,8 @@ $(document).ready(function() {
     //fade in content as we scroll down the page
     //this isn't very DRY as we've used almost identical code to the above, however, it gives us more flexibility with fade-position classes as it doesn't
     //tie us down to the section-position classes
-    let fadePosition = $("body").find(".fade-position");
-    for (let j = 0; j < fadePosition.length; j++) {
+    var fadePosition = $("body").find(".fade-position");
+    for (var j = 0; j < fadePosition.length; j++) {
       // if ($(document).scrollTop() > $(fadePosition[j]).offset().top - 800 && $(document).scrollTop() < $(fadePosition[j]).offset().top + $(fadePosition[j]).height() - 500) {
       if (
         $(document).scrollTop() > $(fadePosition[j]).offset().top - 800 &&
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
   //load google maps api
   function init_map() {
-    let myOptions = {
+    var myOptions = {
       zoom: 11,
       center: new google.maps.LatLng(51.459782, -0.180521),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
