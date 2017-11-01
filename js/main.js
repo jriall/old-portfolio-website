@@ -90,7 +90,7 @@ $(document).ready(function() {
   function init_map() {
     var myOptions = {
       zoom: 11,
-      center: new google.maps.LatLng(51.459782, -0.180521),
+      center: new google.maps.LatLng(51.459779, -0.180647),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false
     };
@@ -100,7 +100,7 @@ $(document).ready(function() {
     );
     marker = new google.maps.Marker({
       map: map,
-      position: new google.maps.LatLng(51.4668445, -0.17063340000004246)
+      position: new google.maps.LatLng(51.459779, -0.180647)
     });
   }
   google.maps.event.addDomListener(window, "load", init_map);
